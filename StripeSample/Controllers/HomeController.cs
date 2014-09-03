@@ -60,7 +60,7 @@ namespace StripeSample.Controllers
                     TokenId = model.Token
                 };
 
-                var chargeService = new StripeChargeService("sk_test_k1ooss8z5FpUBm4CZzpYUMqG");
+                var chargeService = new StripeChargeService("private key goes here");
                 var stripeCharge = chargeService.Create(myCharge);
 
                 return stripeCharge.Id;
