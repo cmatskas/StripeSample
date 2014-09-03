@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Stripe Tutorial</h1>
+    <p class="lead">Stripe makes online payment a breeze. Come and see how.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started with Stripe</h2>
+        <p>
+            A suite of APIs that powers commerce for businesses of all sizes. 
+            With clean, composable, and complete APIs, Stripe’s thoughtful 
+            interfaces and abstractions can handle your company’s online
+            payment needs.
+        </p>
+        <p>@Html.ActionLink("Test Stripe", "Charge", null, new {@class= "btn btn-default" })
+    </div>
+</div>
