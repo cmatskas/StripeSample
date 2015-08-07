@@ -57,12 +57,12 @@ namespace StripeSample.Controllers
                     Amount = (int)(model.Amount * 100),
                     Currency = "gbp",
                     Description = "Description for test charge",
-                    Card = new StripeCreditCardOptions{
+                    Source = new StripeSourceOptions{
                         TokenId = model.Token
                     }
                 };
 
-                var chargeService = new StripeChargeService("private key goes here");
+                var chargeService = new StripeChargeService("your private key here");
                 var stripeCharge = chargeService.Create(myCharge);
 
                 return stripeCharge.Id;
